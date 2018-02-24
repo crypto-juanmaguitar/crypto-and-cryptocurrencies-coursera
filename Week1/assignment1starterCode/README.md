@@ -7,3 +7,4 @@ $ java -cp bin Main
 ## Extra Resources
 
 - https://github.com/keskival/cryptocurrency-course-materials
+- https://www.coursera.org/learn/cryptocurrency/programming/KOo3V/scrooge-coin/discussions
