@@ -1,10 +1,7 @@
-/Crypto.class
-/Main$Tx.class
-/Main.class
-/Transaction$Input.class
-/Transaction$Output.class
-/Transaction.class
-/TxHandler.class
-/UTXO.class
-/UTXOPool.class
-/bin/
+/isValidTest.class
+/IsValidTest.class
+/UtxoSetProject.class
+/UtxoTestSet$UtxoTestSetBuilder.class
+/UtxoTestSet.class
+/ValidationLists.class
+/ValidationLists$Builder.class
