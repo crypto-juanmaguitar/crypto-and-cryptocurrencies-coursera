@@ -4,10 +4,10 @@
 // test your nodes. You will want to try creating some deviant nodes and
 // mixing them in the network to fully test.
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
-import java.util.HashMap;
 
 public class Simulation {
 
@@ -18,7 +18,7 @@ public class Simulation {
       // and numRounds (10, 20). You should try to test your CompliantNode
       // code for all 3x3x3x2 = 54 combinations.
 
-      int numNodes = 100;
+      int numNodes = 10;
       double p_graph = Double.parseDouble(args[0]); // parameter for random graph: prob. that an edge will exist
       double p_malicious = Double.parseDouble(args[1]); // prob. that a node will be set to be malicious
       double p_txDistribution = Double.parseDouble(args[2]); // probability of assigning an initial transaction to each node 
@@ -30,7 +30,7 @@ public class Simulation {
          if(Math.random() < p_malicious)
             // When you are ready to try testing with malicious nodes, replace the
             // instantiation below with an instantiation of a MaliciousNode
-            nodes[i] = new MalDoNothing(p_graph, p_malicious, p_txDistribution, numRounds);
+            nodes[i] = new MaliciousNode(p_graph, p_malicious, p_txDistribution, numRounds);
          else
             nodes[i] = new CompliantNode(p_graph, p_malicious, p_txDistribution, numRounds);
       }
